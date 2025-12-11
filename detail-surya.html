@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail: Energi Surya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+        <h1>Energi Surya: Cara Kerja & Data Kunci</h1>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2>Cara Kerja Sederhana: Efek Fotovoltaik</h2>
+            <div class="flex-container">
+                <div class="text-explanation">
+                    <p>Panel fotovoltaik (PV) mengubah sinar matahari (foton) langsung menjadi listrik melalui proses yang disebut efek fotovoltaik. Ketika foton menabrak sel surya yang terbuat dari silikon, elektron dilepaskan dan menciptakan aliran listrik (arus searah/DC).</p>
+                    <p>Listrik DC ini kemudian diubah oleh inverter menjadi arus bolak-balik (AC) yang dapat digunakan oleh rumah tangga dan jaringan listrik umum.</p>
+                </div>
+                                    </div>
+            </div>
+        </section>
+
+        <section class="data-section">
+            <h2>Data Kunci (Fakta Cepat)</h2>
+            <ul>
+                <li><strong>Efisiensi Rata-rata:</strong> 17% - 22%.</li>
+                <li><strong>Levelized Cost of Energy (LCOE) Relatif:</strong> Kompetitif dengan bahan bakar fosil.</li>
+                <li><strong>Jejak Karbon Siklus Hidup:</strong> Sangat rendah (di bawah 50 g CO2eq/kWh).</li>
+                <li><strong>Kelemahan Utama:</strong> Intermitensi (tidak menghasilkan listrik di malam hari).</li>
+            </ul>
+        </section>
+        
+        <section class="calculator-section">
+            <h2>Kalkulator Potensi Surya Rumah Tangga (Simulasi)</h2>
+            <p>Hitung perkiraan kasar potensi penghematan dan kebutuhan panel Anda berdasarkan tagihan bulanan.</p>
+            <form id="solarCalculator">
+                <label for="monthlyBill">Tagihan Listrik Bulanan (Rp Juta):</label>
+                <input type="number" id="monthlyBill" min="0" value="1.0" step="0.1" required>
+                <button type="submit" class="btn-cta">Hitung Perkiraan</button>
+            </form>
+            <div id="resultOutput" class="result-box hidden">
+                <p id="panelEstimate">Perkiraan akan muncul di sini.</p>
+                <p class="disclaimer">* Perkiraan ini adalah simulasi sederhana. Konsultasi teknis dan survei lokasi diperlukan untuk hasil yang akurat.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Laboratorium Penelitian Energi Alternatif. | <a href="#">Tentang Peneliti</a></p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
